@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <header>
+	  <div class="">
+	  </div>
+	  <div class="nav">
+	    <nav>
+		  <ul>
+		  </ul>
+		</nav>
+	  </div>
+	</header>
+	<div class="main">
+	  <div class="main-banner">
+	    <h1></h1>
+	    <h2></h2>
+	    <p></p>
+	  </div>
+	  <textarea rows="1" cols="30" id="User">
+ENTER YOUR PASSWORD HERE
+</textarea>
+	  <button onclick="logIn()">Login</button>
+	  <p id="show"></p>
+	  <p id="correct"></p>
+	  <p id="wrong"></p>
+	  <script>
+function logIn() {
+	var userfind = document.getElementById("User").value;
+	// Store
+	localStorage.setItem("User", userfind);
+	// Retrieve
+	document.getElementById("show").innerHTML = localStorage.getItem("User");
+	if (userfind = 123){
+		document.getElementById("correct").innerHTML = "User Correct: 1934";
+		if userfind = 123{location.href='http://www.google.ca/';}
+	} else {
+		document.getElementById("wrong").innerHTML = "New User: ";
+	}
+}
+	  </script>
+	</div>
+	<footer>
+	</footer>
+  </body>
+</html>
